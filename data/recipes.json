@@ -1,0 +1,189 @@
+{
+    "chicken with rice and veggies": {
+        "Chicken Breast": {
+            "quantity": 8,
+            "unit": "oz",
+            "category": "Meat & Seafood"
+        },
+        "White Rice": {
+            "quantity": 1,
+            "unit": "cup",
+            "category": "Pantry"
+        },
+        "Frozen Veggies/Broccoli": {
+            "quantity": 1,
+            "unit": "cup",
+            "category": "Frozen Foods"
+        },
+        "Sauce": {
+            "quantity": 2,
+            "unit": "tbsp",
+            "category": "Condiments",
+            "optional": true
+        }
+    },
+
+    "steak with rice and veggies": {
+        "Steak/Ground Beef": {
+            "quantity": 8,
+            "unit": "oz",
+            "category": "Meat & Seafood"
+        },
+        "Meat Seasoning": {
+            "quantity": 1,
+            "unit": "tsp",
+            "category": "Spices & Seasonings"
+        },
+        "White Rice": {
+            "quantity": 1,
+            "unit": "cup",
+            "category": "Pantry"
+        },
+        "Frozen Veggies/Broccoli": {
+            "quantity": 1,
+            "unit": "cup",
+            "category": "Frozen Foods"
+        },
+        "Sauce": {
+            "quantity": 2,
+            "unit": "tbsp",
+            "category": "Condiments",
+            "optional": true
+        }
+    },
+
+    "yoghurt bowl": {
+        "Greek Yoghurt": {
+            "quantity": 1,
+            "unit": "cup",
+            "category": "Dairy & Eggs"
+        },
+        "Protein Powder": {
+            "quantity": 1,
+            "unit": "scoop",
+            "category": "Supplements"
+        },
+        "Honey": {
+            "quantity": 1,
+            "unit": "tbsp",
+            "category": "Condiments"
+        },
+        "Protein Granola": {
+            "quantity": 0.5,
+            "unit": "cup",
+            "category": "Pantry"
+        },
+        "Frozen Fruit": {
+            "quantity": 1,
+            "unit": "cup",
+            "category": "Frozen Foods"
+        }
+    },
+
+    "egg plate": {
+        "Eggs": {
+            "quantity": 3,
+            "unit": "count",
+            "category": "Dairy & Eggs"
+        },
+        "Egg Whites": {
+            "quantity": 0.5,
+            "unit": "cup",
+            "category": "Dairy & Eggs"
+        },
+        "Fresh Fruit": {
+            "quantity": 1,
+            "unit": "cup",
+            "category": "Produce"
+        },
+        "Sourdough Bread": {
+            "quantity": 2,
+            "unit": "slices",
+            "category": "Bread & Bakery"
+        },
+        "Butter": {
+            "quantity": 1,
+            "unit": "tbsp",
+            "category": "Dairy & Eggs"
+        }
+    },
+
+    "bro bowl": {
+        "Ground Beef": {
+            "quantity": 8,
+            "unit": "oz",
+            "category": "Meat & Seafood"
+        },
+        "White Rice": {
+            "quantity": 1,
+            "unit": "cup",
+            "category": "Pantry"
+        },
+        "Eggs": {
+            "quantity": 2,
+            "unit": "count",
+            "category": "Dairy & Eggs"
+        },
+        "Meat Seasoning": {
+            "quantity": 1,
+            "unit": "tsp",
+            "category": "Spices & Seasonings"
+        },
+        "Sauce": {
+            "quantity": 2,
+            "unit": "tbsp",
+            "category": "Condiments"
+        }
+    },
+
+    "fruit smoothie": {
+        "Frozen Fruit": {
+            "quantity": 1,
+            "unit": "cup",
+            "category": "Frozen Foods"
+        },
+        "Protein Powder": {
+            "quantity": 1,
+            "unit": "scoop",
+            "category": "Supplements"
+        },
+        "Juice Packets": {
+            "quantity": 1,
+            "unit": "packet",
+            "category": "Beverages"
+        },
+        "Greek Yoghurt": {
+            "quantity": 0.5,
+            "unit": "cup",
+            "category": "Dairy & Eggs"
+        }
+    },
+
+    "rice cake": {
+        "Rice Cakes": {
+            "quantity": 2,
+            "unit": "count",
+            "category": "Pantry"
+        },
+        "Peanut Butter": {
+            "quantity": 2,
+            "unit": "tbsp",
+            "category": "Condiments"
+        },
+        "Banana": {
+            "quantity": 1,
+            "unit": "count",
+            "category": "Produce"
+        },
+        "Honey": {
+            "quantity": 1,
+            "unit": "tbsp",
+            "category": "Condiments"
+        },
+        "Ground Cinnamon": {
+            "quantity": 0.5,
+            "unit": "tsp",
+            "category": "Spices & Seasonings"
+        }
+    }
+}
