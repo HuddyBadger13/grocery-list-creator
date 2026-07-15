@@ -1,3 +1,3 @@
 # grocery-list-creator
 
-This is my first real project using coding, specifically python. This is a grocery list creator that uses Flask to host a local server, which creates a website where you can create your own meals, say how many times you are going to eat that meal, and derive a grocery list from that data. This uses everything I have learned from python so far and has really helped me understand different aspects of coding. 
+This is my first real project using coding, specifically python. This is a grocery list creator that uses Flask to host a local server, which creates a website where you can create your own meals, say how many times you are going to eat that meal, and derive a grocery list from that data. This uses everything I have learned from python so far and has really helped me understand different aspects of coding. I used ChatGPT for the html and C# sections of code.
