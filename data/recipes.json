@@ -22,7 +22,6 @@
             "optional": true
         }
     },
-
     "steak with rice and veggies": {
         "Steak/Ground Beef": {
             "quantity": 8,
@@ -51,7 +50,6 @@
             "optional": true
         }
     },
-
     "yoghurt bowl": {
         "Greek Yoghurt": {
             "quantity": 1,
@@ -79,7 +77,6 @@
             "category": "Frozen Foods"
         }
     },
-
     "egg plate": {
         "Eggs": {
             "quantity": 3,
@@ -107,7 +104,6 @@
             "category": "Dairy & Eggs"
         }
     },
-
     "bro bowl": {
         "Ground Beef": {
             "quantity": 8,
@@ -135,7 +131,6 @@
             "category": "Condiments"
         }
     },
-
     "fruit smoothie": {
         "Frozen Fruit": {
             "quantity": 1,
@@ -158,7 +153,6 @@
             "category": "Dairy & Eggs"
         }
     },
-
     "rice cake": {
         "Rice Cakes": {
             "quantity": 2,
@@ -184,6 +178,38 @@
             "quantity": 0.5,
             "unit": "tsp",
             "category": "Spices & Seasonings"
+        }
+    },
+    "turkey sandwich on sourdough": {
+        "Sourdough Bread": {
+            "quantity": 2.0,
+            "unit": "slice",
+            "category": "Bread & Bakery"
+        },
+        "Deli Turkey": {
+            "quantity": 4.0,
+            "unit": "oz",
+            "category": "Meat & Seafood"
+        },
+        "Cheese": {
+            "quantity": 1.0,
+            "unit": "slice",
+            "category": "Dairy & Eggs"
+        },
+        "Mustard": {
+            "quantity": 2.0,
+            "unit": "tbsp",
+            "category": "Condiments"
+        },
+        "Lettuce": {
+            "quantity": 12.0,
+            "unit": "cup",
+            "category": "Produce"
+        },
+        "Pickle": {
+            "quantity": 4.0,
+            "unit": "chips",
+            "category": "Produce"
         }
     }
 }

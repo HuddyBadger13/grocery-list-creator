@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grocery List Creator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <main>
+        <h1>Grocery List Creator</h1>
+
+        <form method="POST">
+            <section class="card">
+                <h2>Choose Meals</h2>
+
+                {% for meal in recipes %}
+                    <div class="meal-row">
+                        <label>{{ meal.title() }}</label>
+                        <input type="number" name="servings_{{ meal }}" min="0" placeholder="Servings">
+                    </div>
+                {% endfor %}
+            </section>
+
+            <section class="card">
+                <h2>Add Individual Items</h2>
+
+                <div id="individual-items">
+                    <div class="item-row">
+                        <input type="text" name="item_name" placeholder="Item name">
+                        <input type="number" step="0.1" name="item_quantity" placeholder="Qty">
+                        <input type="text" name="item_unit" placeholder="Unit">
+                        <select name="item_category">
+                            {% for category in categories %}
+                                <option value="{{ category }}">{{ category }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+
+                <button type="button" onclick="addIndividualItem()">Add Another Item</button>
+            </section>
+
+            <button class="main-button" type="submit">Generate Grocery List</button>
+        </form>
+
+        <section class="card">
+            <h2>Add a New Meal</h2>
+
+            <form method="POST" action="/add-meal">
+                <input type="text" name="meal_name" placeholder="Meal name">
+
+                <div id="meal-ingredients">
+                    <div class="item-row">
+                        <input type="text" name="ingredient_name" placeholder="Ingredient">
+                        <input type="number" step="0.1" name="ingredient_quantity" placeholder="Qty">
+                        <input type="text" name="ingredient_unit" placeholder="Unit">
+
+                        <select name="ingredient_category">
+                            {% for category in categories %}
+                                <option value="{{ category }}">{{ category }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+
+                <button type="button" onclick="addMealIngredient()">Add Ingredient</button>
+                <button class="main-button" type="submit">Save Meal</button>
+            </form>
+        </section>
+
+        {% if grocery_list %}
+            <section class="card">
+                <h2>Your Grocery List</h2>
+
+                {% for category, items in grocery_list.items() %}
+                    <h3>{{ category }}</h3>
+                    <ul>
+                        {% for item, info in items.items() %}
+                            <li>
+                                {{ item }}: {{ info.quantity }} {{ info.unit }}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% endfor %}
+            </section>
+        {% endif %}
+    </main>
+
+    <script>
+        function addIndividualItem() {
+            const container = document.getElementById("individual-items");
+            const row = container.querySelector(".item-row").cloneNode(true);
+
+            row.querySelectorAll("input").forEach(input => input.value = "");
+            container.appendChild(row);
+        }
+
+        function addMealIngredient() {
+            const container = document.getElementById("meal-ingredients");
+            const row = container.querySelector(".item-row").cloneNode(true);
+
+            row.querySelectorAll("input").forEach(input => input.value = "");
+            container.appendChild(row);
+        }
+    </script>
+</body>
+</html>

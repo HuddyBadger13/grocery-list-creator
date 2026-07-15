@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 16px;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.card {
+    background: white;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 12px;
+}
+
+.meal-row,
+.item-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+input,
+select,
+button {
+    padding: 12px;
+    font-size: 16px;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.main-button {
+    width: 100%;
+    background: black;
+    color: white;
+    margin-top: 12px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+@media (min-width: 700px) {
+    .meal-row {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .item-row {
+        grid-template-columns: 2fr 1fr 1fr 2fr;
+    }
+}
